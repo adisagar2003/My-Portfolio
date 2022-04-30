@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.1/Chart.min.js"></script>
+    <style>
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Roboto+Condensed:wght@300&family=Rubik:wght@300&family=Water+Brush&display=swap');
+
+
+
+
+
+
+/*  nameAditya */
+@keyframes underline {
+    from{
+        text-decoration: none;
+    
+    }
+    to{
+        text-decoration: underline;
+            
+    }
+    
+}
+.nameAditya{
+    transition: 2s;
+    animation: underline 2s;
+    animation-fill-mode: forwards;
+
+
+
+
+}
+
+
+
+
+/* container for the start*/
+        .container{
+            background-color: #1b111b;
+
+            width: 500px;
+            height: 500px;
+            display: flex;
+            position: relative;
+            left: 65%;
+            margin-top: 0px;
+        }
+
+        body{
+            margin: 0;
+            background-color: black;
+            padding: 0;
+        }
+
+        .greeting{
+            color: rgb(249, 93, 93);
+            letter-spacing: 4px;
+            margin-top: 0px;
+            font-family: 'Caveat', cursive;
+            font-size: 100px;
+            position: relative;
+            bottom: 300px;
+            margin-left: 200px;
+            
+        }
+
+
+        /*About me section*/
+
+        .aboutMe{
+            background-color: #3a253a4c;
+            
+            font-family: 'Roboto Condensed', sans-serif;
+            color:rgba(255, 255, 255, 0.882);   
+        }
+
+        .summary{
+            margin-left: 660px;
+            margin-top: 150px;
+            letter-spacing: 6px;
+        }
+
+        .aboutMe p{
+            padding: 40px;
+            font-family: 'Rubik', sans-serif;
+            padding-right: 500px;
+            
+            
+        }
+        .aboutMediv{
+            margin-top: 40px;
+        }
+
+        /*navbar stuff*/
+
+        #navbar{
+            color: white;
+            z-index:1;
+        
+        }
+
+        nav ul{
+            list-style-type: none;
+            display: flex;
+           flex-direction: row;
+           justify-content: space-evenly;
+            flex-flow: row;
+            gap: 20px;
+            text-decoration: underline;
+            text-decoration-color:rgb(249, 93, 93) ;
+            z-index:1;
+        
+
+        }
+        .navPlate{
+            background-color: #1b111b4c;
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color:rgb(249, 93, 93);
+            text-decoration-color:rgb(249, 93, 93) ;
+
+        }
+        nav li{
+            font-size: 32px;
+        }
+
+        .navPlate a{
+            text-decoration: none;
+            font-family: 'Roboto Condensed', sans-serif;
+            font-size: 23px;
+            color:rgb(249, 93, 93);
+            z-index:1;
+            
+
+        }
+/* Visibility check*/
+
+        .visible{
+            opacity: 100%;
+            transition: 2s;
+            position: fixed;
+            -webkit-backdrop-filter: blur(8px);
+             backdrop-filter: blur(8px);
+           
+             background-color: #1b111b4c;
+
+        }
+
+        .notVisible{
+            opacity: 0%;
+        }
+        nav{
+            width: 1600px;
+        }
+
+
+
+
+/* progress*/
+.progress-bar {
+  height: 8px;
+  background: #a1144abc;
+  width: 0%;
+}
+
+#quotations{
+    margin-bottom: 400px;
+}
+
+.imageContainer_christmas{
+  position: relative;
+
+}
+
+.imageContainer{
+  margin-left: 1200px;
+  box-shadow: #1b111b;
+}
+
+.javaScript{
+  position: relative;
+  bottom: 150px;
+}
+
+.html{
+  position: relative;
+  bottom:  140px;
+}
+
+.CSS{
+  position: relative;
+  bottom: 140px;
+  right: 40px;
+}
+
+.python{
+  position: relative;
+  bottom: 240px;
+  right: 80px;
+}
+
+
+
+/* Projects Section */
+.projects{
+
+height: 600px;
+  font-family: 'Caveat', cursive;
+
+  color: rgba(142, 230, 142, 0.559);
+  background-color: #3e283e;
+}
+
+
+.projectsMade{
+  font-size: 40px;
+  opacity: 100%;
+  margin-left: 650px;
+color:rgba(255, 255, 255, 0.882);
+letter-spacing: 4px;
+
+overflow: hidden;
+}
+
+#christmasCountdownHeading{
+  margin-left: 40px;
+  color: white;
+  letter-spacing: 5px;
+
+}
+
+
+.christmasCountdown p{
+  font-size: 32px;
+  padding-right: 30px;
+  padding-right: 500px;
+  
+
+}
+
+.christmasCountdown{
+  opacity: 100%;
+  transition: 2s;
+  overflow: hidden;
+
+  
+}
+
+.christmasCountdown svg{
+  margin-left: 20px;
+  
+}
+
+.imageContainer_christmas{
+  width: 600px;
+  height: 400px;
+  overflow: hidden;
+  margin-left: 900px;
+  margin-bottom: 500px;
+  position: relative;
+  bottom: 160px;
+}
+
+#project1{
+  opacity: 0;
+}
+
+.gitLink a:hover{
+  color: white;
+  transition: 2s;
+  position: relative;
+
+
+}
+
+.gitLink{
+ margin-left: 500px;
+ position: relative;
+
+}
+
+
+.contact{
+  padding: 150px;
+      font-size: 24px;
+      font-family:'Times New Roman', Times, serif;
+      color:rgb(249, 93, 93);
+      font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+
+  background-color: #1b111b;
+      
+}
+
+.contact h1{
+  margin-left: 500px;
+}
+.contact ul{
+
+z-index:9999999;
+
+}
+.contact ul a{
+
+  display: flex;
+  justify-content: space-around;
+  z-index:9999999;
+
+}
+
+a{
+  color: rgb(249, 93, 93);
+}
+
+.contact li{
+  list-style: none;
+  margin-right: 30px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+
+}
+
+
+/* random password generator*/
+
+.randomPassword h1{
+  color: white;
+  font-family: 'Caveat', cursive;
+  margin-left: 34px;
+}
+.education{
+  font-family: 'Roboto Condensed', sans-serif;
+  color:rgba(255, 255, 255, 0.882);
+  padding: 30px;
+  margin-top: 40px;
+}
+
+.education__heading{
+margin-left: 600px;
+text-decoration: underline;
+letter-spacing: 4px;
+}
+
+    </style>
+</head>
+<body>
+
+
+    <nav id="navbar" class="notVisible">
+        <div class="progress-bar" id="myBar"></div>
+        <ul>
+            <li><div class ='navPlate'>Home</div></li>
+            <li><div class ='navPlate'>Summary</div></li>
+            <li><div class ='navPlate'>Projects</div></li>
+            <li><div class ='navPlate'>Contact</div></li>
+          </ul>
+    </nav>
+<section class="start">
+<div class="container">
+    <canvas id="radar" width="400" height="400"></canvas>
+</div>
+  
+<div class="introduction">
+    <h1 class="greeting">
+        Hi! I am <span class = 'nameAditya'>Aditya Sagar</span>
+    </h1>
+</div>
+
+
+
+</section>
+
+<section class="aboutMe">
+
+  
+<div class="aboutMediv">
+    <h1 class="summary">
+       Summary
+    </h1>
+  
+
+    <p>
+        Hello! I am Aditya. I am skilled with web development technologies such as Javascript, NodeJS, Django, CSS, MongoDB and HTML. I have made numerous projects that can be found on my GitHub. Weather App, Random Food Recommender, NFT card showing my front-end skills and a MERN stack music app, Resona. I quickly learn new technologies and I'm mastering MERN stack right now, which will help me to make full-stack applications. I started my development journey by making vanilla Javascript applications and Django for the backend on May 2021. I am learning NodeJS now which is helping me to improve my backend development skills even more. I am a passionate and hardworking person and I am confident that I will bring value the industry.
+    </p>
+    <div class="imageContainer">
+      <div class="javaScript">
+        <svg xmlns="http://www.w3.org/2000/svg" width="90" height="90" fill="yellow" class="bi bi-filetype-js" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H8v-1h4a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.186 15.29a1.176 1.176 0 0 1-.111-.449h.765a.578.578 0 0 0 .255.384c.07.049.153.087.249.114.095.028.202.041.319.041.164 0 .302-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.255-.144-.462-.193l-.619-.143a1.72 1.72 0 0 1-.539-.214 1.001 1.001 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.528-.422.224-.1.483-.149.776-.149.305 0 .564.05.78.152.216.102.383.239.5.41.12.17.186.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.247-.181.923.923 0 0 0-.369-.068c-.217 0-.388.05-.513.152a.472.472 0 0 0-.184.384c0 .121.048.22.143.3a.97.97 0 0 0 .405.175l.62.143c.218.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Zm-3.104-.033A1.32 1.32 0 0 1 0 14.791h.765a.576.576 0 0 0 .073.27.499.499 0 0 0 .454.246c.19 0 .33-.055.422-.164.092-.11.138-.265.138-.466v-2.745h.79v2.725c0 .44-.119.774-.357 1.005-.236.23-.564.345-.984.345a1.59 1.59 0 0 1-.569-.094 1.145 1.145 0 0 1-.407-.266 1.14 1.14 0 0 1-.243-.39Z"/>
+        </svg>
+
+      </div>
+     <div class="html">
+      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="orange" class="bi bi-filetype-html" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M14 4.5V11h-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5Zm-9.736 7.35v3.999h-.791v-1.714H1.79v1.714H1V11.85h.791v1.626h1.682V11.85h.79Zm2.251.662v3.337h-.794v-3.337H4.588v-.662h3.064v.662H6.515Zm2.176 3.337v-2.66h.038l.952 2.159h.516l.946-2.16h.038v2.661h.715V11.85h-.8l-1.14 2.596H9.93L8.79 11.85h-.805v3.999h.706Zm4.71-.674h1.696v.674H12.61V11.85h.79v3.325Z"/>
+      </svg>
+     </div>
+
+     <div class="CSS">
+      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="aqua" class="bi bi-filetype-css" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2h-1v-1h1a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM3.397 14.841a1.13 1.13 0 0 0 .401.823c.13.108.289.192.478.252.19.061.411.091.665.091.338 0 .624-.053.859-.158.236-.105.416-.252.539-.44.125-.189.187-.408.187-.656 0-.224-.045-.41-.134-.56a1.001 1.001 0 0 0-.375-.357 2.027 2.027 0 0 0-.566-.21l-.621-.144a.97.97 0 0 1-.404-.176.37.37 0 0 1-.144-.299c0-.156.062-.284.185-.384.125-.101.296-.152.512-.152.143 0 .266.023.37.068a.624.624 0 0 1 .246.181.56.56 0 0 1 .12.258h.75a1.092 1.092 0 0 0-.2-.566 1.21 1.21 0 0 0-.5-.41 1.813 1.813 0 0 0-.78-.152c-.293 0-.551.05-.776.15-.225.099-.4.24-.527.421-.127.182-.19.395-.19.639 0 .201.04.376.122.524.082.149.2.27.352.367.152.095.332.167.539.213l.618.144c.207.049.361.113.463.193a.387.387 0 0 1 .152.326.505.505 0 0 1-.085.29.559.559 0 0 1-.255.193c-.111.047-.249.07-.413.07-.117 0-.223-.013-.32-.04a.838.838 0 0 1-.248-.115.578.578 0 0 1-.255-.384h-.765ZM.806 13.693c0-.248.034-.46.102-.633a.868.868 0 0 1 .302-.399.814.814 0 0 1 .475-.137c.15 0 .283.032.398.097a.7.7 0 0 1 .272.26.85.85 0 0 1 .12.381h.765v-.072a1.33 1.33 0 0 0-.466-.964 1.441 1.441 0 0 0-.489-.272 1.838 1.838 0 0 0-.606-.097c-.356 0-.66.074-.911.223-.25.148-.44.359-.572.632-.13.274-.196.6-.196.979v.498c0 .379.064.704.193.976.131.271.322.48.572.626.25.145.554.217.914.217.293 0 .554-.055.785-.164.23-.11.414-.26.55-.454a1.27 1.27 0 0 0 .226-.674v-.076h-.764a.799.799 0 0 1-.118.363.7.7 0 0 1-.272.25.874.874 0 0 1-.401.087.845.845 0 0 1-.478-.132.833.833 0 0 1-.299-.392 1.699 1.699 0 0 1-.102-.627v-.495ZM6.78 15.29a1.176 1.176 0 0 1-.111-.449h.764a.578.578 0 0 0 .255.384c.07.049.154.087.25.114.095.028.201.041.319.041.164 0 .301-.023.413-.07a.559.559 0 0 0 .255-.193.507.507 0 0 0 .085-.29.387.387 0 0 0-.153-.326c-.101-.08-.256-.144-.463-.193l-.618-.143a1.72 1.72 0 0 1-.539-.214 1 1 0 0 1-.351-.367 1.068 1.068 0 0 1-.123-.524c0-.244.063-.457.19-.639.127-.181.303-.322.527-.422.225-.1.484-.149.777-.149.304 0 .564.05.779.152.217.102.384.239.5.41.12.17.187.359.2.566h-.75a.56.56 0 0 0-.12-.258.624.624 0 0 0-.246-.181.923.923 0 0 0-.37-.068c-.216 0-.387.05-.512.152a.472.472 0 0 0-.184.384c0 .121.047.22.143.3a.97.97 0 0 0 .404.175l.621.143c.217.05.406.12.566.211.16.09.285.21.375.358.09.148.135.335.135.56 0 .247-.063.466-.188.656a1.216 1.216 0 0 1-.539.439c-.234.105-.52.158-.858.158-.254 0-.476-.03-.665-.09a1.404 1.404 0 0 1-.478-.252 1.13 1.13 0 0 1-.29-.375Z"/>
+      </svg>
+     </div>
+     <div class="python">
+      <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="yellow" class="bi bi-filetype-py" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M14 4.5V14a2 2 0 0 1-2 2H7v-1h5a1 1 0 0 0 1-1V4.5h-2A1.5 1.5 0 0 1 9.5 3V1H4a1 1 0 0 0-1 1v9H2V2a2 2 0 0 1 2-2h5.5L14 4.5ZM0 11.85h1.6c.289 0 .533.06.732.179.201.117.355.276.46.477.105.201.158.427.158.677 0 .25-.054.476-.16.677-.106.199-.26.357-.464.474a1.452 1.452 0 0 1-.732.173H.79v1.342H0V11.85Zm2.06 1.714a.795.795 0 0 0 .085-.381c0-.227-.062-.4-.185-.521-.123-.122-.294-.182-.513-.182H.788v1.406h.66a.794.794 0 0 0 .374-.082.574.574 0 0 0 .238-.24Zm2.963.75v1.535H4.23v-1.52L2.89 11.85h.876l.853 1.696h.032l.856-1.696h.855l-1.339 2.464Z"/>
+      </svg>
+     </div>
+
+    </div>
+    </div>  
+</section>
+
+
+
+
+
+
+<section class="projects">
+
+<span class="projectsMade">
+  Projects
+</span>
+
+ 
+
+
+<div class="christmasCountdown" id="project1">
+<h1 id="christmasCountdownHeading">Christmas Countdown  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tree" viewBox="0 0 16 16">
+  <path d="M8.416.223a.5.5 0 0 0-.832 0l-3 4.5A.5.5 0 0 0 5 5.5h.098L3.076 8.735A.5.5 0 0 0 3.5 9.5h.191l-1.638 3.276a.5.5 0 0 0 .447.724H7V16h2v-2.5h4.5a.5.5 0 0 0 .447-.724L12.31 9.5h.191a.5.5 0 0 0 .424-.765L10.902 5.5H11a.5.5 0 0 0 .416-.777l-3-4.5zM6.437 4.758A.5.5 0 0 0 6 4.5h-.066L8 1.401 10.066 4.5H10a.5.5 0 0 0-.424.765L11.598 8.5H11.5a.5.5 0 0 0-.447.724L12.69 12.5H3.309l1.638-3.276A.5.5 0 0 0 4.5 8.5h-.098l2.022-3.235a.5.5 0 0 0 .013-.507z"/>
+</svg></h1>
+ <p> A simple app which tells the number of days left before christmas <a href="https://github.com/adisagar2003/Web-DevelopmentProjects/tree/main/Christmas_Countdown"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="aqua" class="bi bi-github" viewBox="0 0 16 16">
+  <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+</svg></svg></h1></a></p>
+
+<div class="randomPassword">
+  <h1 class="">Random Password Generator(Django project)</h1>
+ 
+    <p>Generates passwords using python scripts<a href="https://github.com/adisagar2003/Web-DevelopmentProjects/tree/main/RandomPasswordGenerator"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="aqua" class="bi bi-github" viewBox="0 0 16 16">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+    </svg></svg></h1></a></p>
+   </div> 
+
+
+
+   <div class="randomPassword">
+    <h1 class="">Random Meal Suggester </h1>
+   
+      <p>Generates different recipes using api<a  class='diffLink'href="https://github.com/adisagar2003/Web-DevelopmentProjects/tree/main/RandomPasswordGenerator"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="aqua" class="bi bi-github" viewBox="0 0 16 16">
+        <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+      </svg></svg></h1></a></p>
+     </div> 
+  
+<div class="imageContainer_christmas">
+  <img src="christmas.png" alt="" srcset="" width="800" height="300">
+
+</div>
+
+
+
+
+
+
+</div>
+
+
+
+
+</section>
+
+<section class="education">
+    <h1 class="education__heading">
+      Education
+    </h1>
+    <h2 class="education__desc">Bachelor of Science – Computer Science – Memorial University of Newfoundland, St. John’s
+      Expected Graduation – September 2025
+      </h2>
+
+
+
+</section>
+
+
+
+
+<section class="contact">
+
+
+  <h1>Contacts </h1>
+
+  <ul>
+     <a href="mailto:adityasagarpython@gmail.com">adityasagarpython@gmail.com</a>
+   <a href="https://www.linkedin.com/in/aditya-sagar-42948721a/">LinkedIn</a>
+    <a  href="https://github.com/adisagar2003/ "><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="aqua" class="bi bi-github" viewBox="0 0 16 16">
+      <path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"/>
+    </svg></svg></h1></a>
+
+  </ul>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src='C:\Users\Aditya\Node\Portfolio\node_modules\chart.js\dist\chart.js'></script>
+    <script>
+
+var chartColors = {
+	red: 'rgb(255, 99, 132)',
+	orange: 'rgb(255, 159, 64)',
+	yellow: 'rgb(255, 205, 86)',
+	green: 'rgb(75, 192, 192)',
+	blue: 'rgb(54, 162, 235)',
+	purple: 'rgb(153, 102, 255)',
+	grey: 'rgb(231,233,237)'
+};
+
+var color = Chart.helpers.color;
+var config = {
+  type: 'radar',
+  data: {
+    labels: [
+      ["NodeJS", "Express","EJS"],
+      ["Javascript", ]  , ["Python", "Data Visualization","Django"], 
+    ],
+    datasets: [{
+      label: "Mastery of skill in terms of percentage",
+      backgroundColor: color(chartColors.red).alpha(0.1).rgbString(),
+      borderColor: chartColors.red,
+      pointBackgroundColor: chartColors.red,
+      data: [
+        75,
+        90,
+        50
+      ]
+    }, 
+     
+      ]
+  },
+  options: {
+    legend: {
+      position: 'top',
+      labels: {
+        fontColor: 'white'
+      }
+    },
+    title: {
+      display: true,
+      text: 'Programming Skills',
+      fontColor: 'white'
+    },
+    scale: {
+      ticks: {
+        beginAtZero: true,
+        fontColor: 'white', // labels such as 10, 20, etc
+        showLabelBackdrop: false // hide square behind text
+      },
+      pointLabels: {
+        fontColor: 'white' // labels around the edge like 'Running'
+      },
+      gridLines: {
+        color: 'rgba(255, 255, 255, 0.2)'
+      },
+      angleLines: {
+        color: 'white' // lines radiating from the center
+      }
+    }
+  }
+};
+
+// A plugin to draw the background color
+Chart.plugins.register({
+  beforeDraw: function(chartInstance) {
+    var ctx = chartInstance.chart.ctx;
+    ctx.fillStyle = 'black';
+    ctx.fillRect(0, 0, chartInstance.chart.width, chartInstance.chart.height);
+  }
+})
+
+window.myRadar = new Chart(document.getElementById("radar"), config);
+
+
+
+    </script>
+
+
+
+<script>
+    setInterval(myFunction(),500)
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  document.getElementById("myBar").style.width = scrolled + "%";
+  console.log('working')
+
+}
+
+
+</script>
+<script>
+var navbar = document.getElementById('navbar')
+var a = 0
+window.addEventListener('scroll',()=>{
+    a+=1
+   if (a>30){
+       navbar.classList.remove('notVisible')
+    navbar.classList.add('visible')
+  
+   }
+   else{
+    navbar.classList.add('notVisible');
+    navbar.classList.remove('visible');
+
+   }
+})
+
+
+</script>
+
+
+<!--- Script for progress bar --->
+
+
+
+<!--- Script for fade in projects  --->
+
+<script>
+
+  var christmasCountdown = document.getElementById('project1');
+
+
+
+var a = 0
+window.addEventListener('scroll',()=>{
+    a+=1
+   if (a>100){
+    christmasCountdown.style.opacity = "100%";
+    christmasCountdown.style.opacity = "all 2s";
+    console.log('initiated')
+    
+   }
+})
+
+</script>
+
+</body>
+</html>
